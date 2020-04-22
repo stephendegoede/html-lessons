@@ -1,0 +1,20 @@
+body {
+  background-color: #d6e6f2;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  width: 15%;
+  border-top: dotted 4px;
+  border-color: grey;
+  background-color: inherit;
+}
+
+img {
+  width: 200px;
+}
+
+table {
+  border-spacing: 10px;
+}
