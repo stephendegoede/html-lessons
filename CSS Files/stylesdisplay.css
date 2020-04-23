@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+}
+
+.outsidedivs {
+  border: solid;
+}
+
+.toprel, .middlerel, .bottomrel {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.toprel {
+  background-color: #dbe2ef;
+  left: 400px;
+}
+
+.middlerel {
+  background-color: red;
+  right: 200px;
+}
+
+.bottomrel {
+  background-color: blue;
+  right: 200px;
+}
+
+.topabs, .middleabs, .bottomabs, .yellowfixed {
+  margin: 0;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.topabs {
+  background-color: #dbe2ef;
+  left: 400px;
+  position: absolute;
+}
+
+.middleabs {
+  background-color: red;
+}
+
+.bottomabs {
+  background-color: blue;
+}
+
+.yellowfixed {
+  background-color: yellow;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
