@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+p {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.top {
+  background-color: #dbe2ef;
+  width: 200px;
+  height: 200px;
+  border: solid;
+  border-width: 10px;
+  padding: 20px;
+}
+
+.middle {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin-left: 260px;
+  border: solid;
+  border-width: 20px;
+}
+
+.bottom {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  border: solid;
+  border-width: 10px;
+  margin-left: 500px;
+}
