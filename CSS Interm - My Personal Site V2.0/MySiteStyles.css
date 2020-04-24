@@ -2,6 +2,7 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -23,6 +24,7 @@ h3 {
   position: relative;
   /* bottom: 15px; */
   color: #11999E;
+  font-size: 1rem;
 }
 
 h4 {
@@ -41,10 +43,11 @@ a {
 
 hr {
   border: none;
-  /* height: 2px; */
-  width: 5%;
+  height: 2px;
+  width: 35px;
   border-top: dotted 4px;
   border-color: lightgrey;
+  margin: 50px auto 50px auto;
   /* background-color: inherit; */
 }
 
@@ -89,6 +92,13 @@ hr {
   position: relative;
 }
 
+.bottom-container {
+  background-color: #66BFBF;
+  margin-bottom: 0;
+  margin-top: 30px;
+  padding: 15px;
+}
+
 .underline {
   text-decoration: underline;
 }
@@ -103,6 +113,22 @@ hr {
   position: absolute;
   left: 300px;
   bottom: 300px;
+}
+
+.copyright{
+  margin-bottom: 0;
+  color: white;
+  font-size: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.footer-link{
+  font-family: quicksand;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 10px;
 }
 
 .contactbutton {
@@ -123,7 +149,6 @@ hr {
   font-size: 14px;
   font-weight: 300;
   padding: 15px;
-
   /* box-shadow: 1px 1px 20px 0 #000000; */
   /* -webkit-box-shadow: 1px 1px 20px 0 #000000;
   -moz-box-shadow: 1px 1px 20px 0 #000000; */
