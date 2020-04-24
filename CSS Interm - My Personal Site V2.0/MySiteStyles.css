@@ -1,9 +1,11 @@
 body {
   margin: 0;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
+  font-family: 'Pacifico', cursive;
   margin-top: 0;
 }
 
