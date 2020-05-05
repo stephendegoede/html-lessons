@@ -16,15 +16,19 @@
   <!-- Can change the sm to md, lg, for small/medium/large which affects the orientation based on the size of the viewport -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
+<!-- The order in which you add components to the structure affects the placement of your code on the page e.g. if you wanted the button first and then the brand you could simply swop the "tindog" brand and button -->
     <a class="navbar-brand" href="">tindog</a>
 
+<!-- This is the code to add the button, but you need to link a div to it (see below) e.g. it is linked by the "navbarTogglerDemo01" as seen below -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+<!-- This div is linked to the button above with the navbarTogglerDemo01 code -->
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-      <ul class="navbar-nav  ml-auto">
+<!-- Important to note here is the difference in the placing of the list items. Those that have the ml-auto added in the class appear on the right of the screen whereas those that don't are on the left -->
+      <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="#">Contact</a>
         </li>
         <li class="nav-item ml-auto"><a class="nav-link" href="#">Pricing</a>
