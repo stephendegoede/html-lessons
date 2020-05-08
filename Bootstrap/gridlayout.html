@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>grid layout example</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <h1>Example of different column types</h1>
+
+  <!-- Example of a row with two columns which take up the full width of the screen -->
+  <div class="row">
+    <div class="col" style="background-color:red; border: 1px solid">
+      col
+    </div>
+    <div class="col" style="background-color:red; border: 1px solid">
+      col
+    </div>
+    <div class="col" style="background-color:red; border: 1px solid">
+      col
+    </div>
+  </div>
+
+  <!-- Example of a row with two columns which take up 6 spaces each - if one is removed will still only take up 6 spaces. This means each column will simply resize to fit all columns in one row on screen -->
+  <div class="row">
+    <div class="col-6" style="background-color:green; border: 1px solid">
+      col-6
+    </div>
+    <div class="col-4" style="background-color:green; border: 1px solid">
+      col-4
+    </div>
+    <div class="col-2" style="background-color:green; border: 1px solid">
+      col-2
+    </div>
+  </div>
+
+  <!-- Example of a row with two columns which take up 6 spaces each and are viewed in a row as long as the viewport is the size of a tablet or higher. As soon as the size of the screen is smaller than a tablet the columns will move below each other (create a new row). The row/columns are therefore responsive. -->
+  <div class="row">
+    <div class="col-md-6" style="background-color:yellow; border: 1px solid">
+      col-md-6
+    </div>
+    <div class="col-md-6" style="background-color:yellow; border: 1px solid">
+      col-md-6
+    </div>
+  </div>
+
+  <hr>
+
+  <h1>Creating a responsive flow</h1>
+
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+  </div>
+  <hr>
+
+  <h1>Angela Challenge</h1>
+
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:grey; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:grey; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:grey; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:grey; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:grey; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:grey; border: 1px solid">
+      col-lg-3 col-md-4 col-sm-6
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
