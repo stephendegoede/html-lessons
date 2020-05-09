@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Z-Axis and Stacking Order</title>
+
+  <style media="screen">
+    div {
+      height: 100px;
+      width: 100px;
+      border: 1px solid;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .redabs {
+      background-color: red;
+      position: absolute;
+      top: 0px;
+    }
+
+    .yellowabs {
+      background-color: yellow;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+
+    .blueabs {
+      background-color: blue;
+      position: absolute;
+      left: 40px;
+      top: 40px;
+    }
+
+    .abs {
+      position: relative;
+    }
+
+    .z1{
+      z-index: 1;
+    }
+
+    .z-1{
+      z-index: -1;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Three squares default position (static)</h1>
+  <div class="red">
+    Red
+  </div>
+
+  <div class="yellow">
+    Yellow
+  </div>
+
+  <div class="blue">
+    Blue
+  </div>
+
+  <h1>Three squares default position (static)
+    Yellow nested in Red</h1>
+  <div class="red">
+    Red
+    <div class="yellow">
+      Yellow
+    </div>
+  </div>
+
+  <div class="blue">
+    Blue
+  </div>
+
+  <h1>Three squares Position: absolute</h1>
+  <h3>Each square is taken out of the flow through Absolute and is "relative" to it's parent. They are then moved accordingly. They overlap based on the natural stacking order (as you move down HTML doc elements move closer to the screen)</h3>
+
+  <div class="abs">
+
+    <div class="redabs">
+      Red
+    </div>
+
+    <div class="yellowabs">
+      Yellow
+    </div>
+
+    <div class="blueabs">
+      Blue
+    </div>
+
+  </div>
+
+<br>
+<br>
+
+  <h1>Three squares Position: absolute & Change Z-index</h1>
+  <h3>One way to change the stacking order of your code is to change an elements Z-index. This is so you don't have to change the order of your code.</h3>
+
+  <div class="abs">
+
+    <div class="redabs z1">
+      Red
+    </div>
+
+    <div class="yellowabs">
+      Yellow
+    </div>
+
+    <div class="blueabs z-1">
+      Blue
+    </div>
+
+  </div>
+
+</body>
+
+</html>
