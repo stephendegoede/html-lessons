@@ -71,6 +71,28 @@ body {
   /* top: 30px; */
 }
 
+@media (max-width: 991px) {
+  .title-image{
+    transform: rotate(0deg);
+    /* position: static; */
+    width: 40%;
+    left: 30%;
+  }
+
+  .col-lg-6{
+    text-align: center;
+  }
+
+  #title{
+    padding-bottom: 25%;
+  }
+
+}
+
+.download-button {
+  margin: 5% 2% 5%;
+}
+
 /* Features */
 #features{
   background-color: white;
