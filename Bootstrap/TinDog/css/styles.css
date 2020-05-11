@@ -15,6 +15,17 @@ body {
   text-align: center;
 }
 
+
+
+.color-section{
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section{
+    background-color: #fff;
+}
+
 /* HEADINGS */
 
 .big-heading{
@@ -27,11 +38,9 @@ body {
   line-height: 1.5;
 }
 
-/* Navigation Bar */
+/* NAVIGATION BAR SECTION */
 
 #title {
-  background-color: #ff4c68;
-  color: #fff;
   text-align: left;
 }
 
@@ -59,25 +68,22 @@ body {
   font-weight: light;
 }
 
-/* Download Buttons */
+/* DOWNLOAS BUTTONS */
 .download-button, .download-buttoncta {
   margin: 5% 3% 5% 0;
 }
 
-/* Title Image */
+/* TITLE IMAGE */
 .title-image {
   width: 60%;
   transform: rotate(25deg);
   position: absolute;
-  /* z-index: -1; */
   left: 100px;
-  /* top: 30px; */
 }
 
 @media (max-width: 991px) {
   .title-image {
     transform: rotate(0deg);
-    /* position: static; */
     width: 40%;
     left: 30%;
   }
@@ -95,9 +101,8 @@ body {
   margin: 5% 2% 5%;
 }
 
-/* Features */
+/* FEATURES SECTION*/
 #features {
-  background-color: white;
   /* Not necessary to set the z-index for the features section because the imgage (see above) has been set to absolute postion, which takes it out of the flow of the html. As the features section has been set to relative, it is now on top of the image as it is after the image in the HTML and the further down in the HTML you go the closer elements move to the screen. See the pdf flow chart for more. */
   /* z-index: 1; */
   position: relative;
@@ -107,7 +112,7 @@ body {
   color: #8f8f8f
 }
 
-/* Feature Icons */
+/* FEATURE ICONS */
 .fa-check-circle,
 .fa-bullseye,
 .fa-heart {
@@ -126,10 +131,9 @@ body {
     font-size: 1.5rem;
 }
 
-/* Testimonials Section */
+/* TESTIMONIALS SECTION */
 #testimonials {
   background-color: #ef8172;
-  color: #fff;
 }
 
 #testimonials .container-fluid{
@@ -149,7 +153,6 @@ body {
 
 #press {
   background-color: #ef8172;
-  /* padding-bottom: 3%; */
 }
 
 #press .container-fluid{
@@ -167,15 +170,8 @@ body {
   padding-bottom: 5%
 }
 
-.carousel-inner {
-  /* height: 350px; */
-}
 
-/* Pricing Section */
-#pricing {
-  padding: 50px 0;
-}
-
+/* PRICING SECTION */
 .pricing-column {
   padding: 3% 2%;
 }
@@ -185,11 +181,7 @@ body {
   line-height: 1.5;
 }
 
-/* Call to Action Section */
-#cta {
-  background-color: #ff4c68;
-  color: #fff;
-}
+/* CALL TO ACTION SECTION */
 
 .calltoaction-heading {
   font-size: 2.5rem;
@@ -200,11 +192,7 @@ body {
   margin-bottom: 0;
 }
 
-/* Footer Section */
-#footer {
-  background-color: #fff;
-  /* padding: 3% 15%; */
-}
+/* FOOTER SECTION */
 
 #footer .container-fluid{
   padding: 3% 15%;
