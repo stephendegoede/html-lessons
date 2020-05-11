@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Combining Selectors</title>
-  </head>
-  <body>
-    
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Combining Selectors</title>
+
+  <style media="screen">
+    /* COMBINED SELECTORS */
+    h1.title {
+      color:
+        red;
+    }
+
+
+    /* HIERARCHICAL SELECTORS */
+    .container-fluid .title-container {
+      color:
+        blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Hello World</h1>
+  </div>
+
+  <div class="container-fluid">
+    <h1 class="title-container">Good Bye World</h1>
+  </div>
+
+</body>
+
 </html>
