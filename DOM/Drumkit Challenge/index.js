@@ -20,6 +20,15 @@ document.addEventListener("keydown", function (event){
   buttonAnimation (event.key);
 })
 
+function buttonAnimation (currentKey){
+  var activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add ("pressed");
+  // delay (1);
+  setTimeout (function (){
+    activeButton.classList.remove ("pressed")
+  }, 100);
+}
+
 
 function makeSound (key){
   switch (key) {
