@@ -9,54 +9,61 @@ var l = new Audio("sounds/tom-4.mp3");
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
     var buttonInnerHTML = this.innerHTML;
-    makeSound (buttonInnerHTML);
-    buttonAnimation (buttonInnerHTML);
+    makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
   });
 }
 
-document.addEventListener("keydown", function (event){
+document.addEventListener("keydown", function(event) {
   var keyboardPressed = event.key;
-  makeSound (event.key);
-  buttonAnimation (event.key);
+  makeSound(event.key);
+  buttonAnimation(event.key);
 })
 
-function buttonAnimation (currentKey){
+function buttonAnimation(currentKey) {
   var activeButton = document.querySelector("." + currentKey);
-  activeButton.classList.add ("pressed");
+  activeButton.classList.add("pressed");
   // delay (1);
-  setTimeout (function (){
-    activeButton.classList.remove ("pressed")
+  setTimeout(function() {
+    activeButton.classList.remove("pressed")
   }, 100);
 }
 
 
-function makeSound (key){
+function makeSound(key) {
   switch (key) {
     case "w":
+      w.load();
       w.play();
       break;
 
     case "a":
+      a.load();
       a.play();
       break;
 
     case "s":
+      s.load();
       s.play();
       break;
 
     case "d":
+      d.load();
       d.play();
       break;
 
     case "j":
+      j.load();
       j.play();
       break;
 
     case "k":
+      k.load();
       k.play();
       break;
 
     case "l":
+      l.load();
       l.play();
       break;
 
